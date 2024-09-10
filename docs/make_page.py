@@ -15,49 +15,54 @@ html_header_and_style = r"""
 
 <div id="table-of-contents">
   <h2>Table of Contents</h2>
-  <ul id="toc-list">
-    <li><a href="#paperdolls"><em>Paperdolls</em></a></li>
-    <li><a href="#paperdolls_shields">Ultima Shields</a></li>
-    <li><a href="#paperdolls_armor">Ultima Armor</a></li>
-    <li><a href="#paperdolls_clothes">Ultima Clothes</a></li>
-    <li><a href="#paperdolls_accessories">Ultima Accessories</a></li>
-    <li><a href="#paperdolls_ammo">Ammo</a></li>
-    <li><a href="#paperdolls_arrows">Arrows</a></li>
-    <li><a href="#paperdolls_axes">Axes</a></li>
-    <li><a href="#paperdolls_blowguns">Blowguns</a></li>
-    <li><a href="#paperdolls_bolts">Bolts</a></li>
-    <li><a href="#paperdolls_bows">Bows</a></li>
-    <li><a href="#paperdolls_crossbows">Crossbows</a></li>
-    <li><a href="#paperdolls_daggers">Daggers</a></li>
-    <li><a href="#paperdolls_firearms">Firearms</a></li>
-    <li><a href="#paperdolls_flails">Flails</a></li>
-    <li><a href="#paperdolls_maces">Maces</a></li>
-    <li><a href="#paperdolls_polearms">Polearms</a></li>
-    <li><a href="#paperdolls_slings">Slings</a></li>
-    <li><a href="#paperdolls_swords">Swords</a></li>
-    <li><a href="#paperdolls_thrown">Thrown</a></li>
-    <li><a href="#paperdolls_wands">Wands</a></li>
-    <li><a href="#shapes"><em>Shapes</em></a></li>
-    <li><a href="#shapes_shields">Ultima Shields</a></li>
-    <li><a href="#shapes_armor">Ultima Armor</a></li>
-    <li><a href="#shapes_clothes">Ultima Clothes</a></li>
-    <li><a href="#shapes_accessories">Ultima Accessories</a></li>
-    <li><a href="#shapes_ammo">Ammo</a></li>
-    <li><a href="#shapes_arrows">Arrows</a></li>
-    <li><a href="#shapes_axes">Axes</a></li>
-    <li><a href="#shapes_blowguns">Blowguns</a></li>
-    <li><a href="#shapes_bolts">Bolts</a></li>
-    <li><a href="#shapes_bows">Bows</a></li>
-    <li><a href="#shapes_crossbows">Crossbows</a></li>
-    <li><a href="#shapes_daggers">Daggers</a></li>
-    <li><a href="#shapes_firearms">Firearms</a></li>
-    <li><a href="#shapes_flails">Flails</a></li>
-    <li><a href="#shapes_maces">Maces</a></li>
-    <li><a href="#shapes_polearms">Polearms</a></li>
-    <li><a href="#shapes_slings">Slings</a></li>
-    <li><a href="#shapes_swords">Swords</a></li>
-    <li><a href="#shapes_thrown">Thrown</a></li>
-    <li><a href="#shapes_wands">Wands</a></li></ul>
+    <div class="toc-columns">
+       <div class="toc-column">
+           <h3><a href="#paperdolls">Paperdolls</a></h3>
+           <a class="toc-link" href="#paperdolls_accessories">Accessories</a>
+           <a class="toc-link" href="#paperdolls_ammo">Ammo</a>
+           <a class="toc-link" href="#paperdolls_armor">Armor</a>
+           <a class="toc-link" href="#paperdolls_arrows">Arrows</a>
+           <a class="toc-link" href="#paperdolls_axes">Axes</a>
+           <a class="toc-link" href="#paperdolls_blowguns">Blowguns</a>
+           <a class="toc-link" href="#paperdolls_bolts">Bolts</a>
+           <a class="toc-link" href="#paperdolls_bows">Bows</a>
+           <a class="toc-link" href="#paperdolls_clothes">Clothes</a>
+           <a class="toc-link" href="#paperdolls_crossbows">Crossbows</a>
+           <a class="toc-link" href="#paperdolls_daggers">Daggers</a>
+           <a class="toc-link" href="#paperdolls_firearms">Firearms</a>
+           <a class="toc-link" href="#paperdolls_flails">Flails</a>
+           <a class="toc-link" href="#paperdolls_maces">Maces</a>
+           <a class="toc-link" href="#paperdolls_polearms">Polearms</a>
+           <a class="toc-link" href="#paperdolls_shields">Shields</a>
+           <a class="toc-link" href="#paperdolls_slings">Slings</a>
+           <a class="toc-link" href="#paperdolls_swords">Swords</a>
+           <a class="toc-link" href="#paperdolls_thrown">Thrown</a>
+           <a class="toc-link" href="#paperdolls_wands">Wands</a>
+       </div>
+        <div class="toc-column">
+            <h3><a href="#shapes">Shapes and sprites</a></h3>
+            <a class="toc-link" href="#shapes_accessories">Accessories</a>
+            <a class="toc-link" href="#shapes_armor">Armor</a>
+            <a class="toc-link" href="#shapes_clothes">Clothes</a>
+            <a class="toc-link" href="#shapes_shields">Shields</a>
+            <a class="toc-link" href="#shapes_ammo">Ammo</a>
+            <a class="toc-link" href="#shapes_arrows">Arrows</a>
+            <a class="toc-link" href="#shapes_axes">Axes</a>
+            <a class="toc-link" href="#shapes_blowguns">Blowguns</a>
+            <a class="toc-link" href="#shapes_bolts">Bolts</a>
+            <a class="toc-link" href="#shapes_bows">Bows</a>
+            <a class="toc-link" href="#shapes_crossbows">Crossbows</a>
+            <a class="toc-link" href="#shapes_daggers">Daggers</a>
+            <a class="toc-link" href="#shapes_firearms">Firearms</a>
+            <a class="toc-link" href="#shapes_flails">Flails</a>
+            <a class="toc-link" href="#shapes_maces">Maces</a>
+            <a class="toc-link" href="#shapes_polearms">Polearms</a>
+            <a class="toc-link" href="#shapes_slings">Slings</a>
+            <a class="toc-link" href="#shapes_swords">Swords</a>
+            <a class="toc-link" href="#shapes_thrown">Thrown</a>
+            <a class="toc-link" href="#shapes_wands">Wands</a>
+        </div>
+    </div>
 </div>
 
 """
@@ -74,72 +79,74 @@ html_footer = r"""
 </body>
 </html>
 """
-# This script is supposed to generate the HTML TOC I hardcoded above.
+
+# To auto-generate a toc in case I change stuff
 # <script>
-#   // Get all h1 and h2 elements on the page
-#   const headings = document.querySelectorAll('h2, h3');
-
-#   // Create a table of contents list
-#   const tocList = document.getElementById('toc-list');
-
-#   // Loop through each heading and add a link to the table of contents
-#   headings.forEach((heading) => {
+# // Get all h1 and h2 elements on the page
+# const headings = document.querySelectorAll('h2, h3');
+#
+# // Create a table of contents list
+# const tocList = document.getElementById('toc-list');
+#
+# // Loop through each heading and add a link to the table of contents
+# headings.forEach((heading) => {
 #     const link = document.createElement('a');
-#     link.textContent = heading.textContent;
-#     link.href = `#${heading.id}`;
-
-#     // If the heading is an h1, add a class to indicate it's a top-level heading
-#     if (heading.tagName === 'h2') {
-#       link.classList.add('top-level');
-#     }
-
-#     const listItem = document.createElement('li');
-#     listItem.appendChild(link);
-#     tocList.appendChild(listItem);
-#   });
-
+# link.textContent = heading.textContent;
+# link.href = `#${heading.id}`;
+#
+#             // If the heading is an h1, add a class to indicate it's a top-level heading
+# if (heading.tagName === 'h2') {
+# link.classList.add('top-level');
+# }
+#
+# const listItem = document.createElement('li');
+# listItem.appendChild(link);
+# tocList.appendChild(listItem);
+# });
+#
 # </script>
 
+
 def create_image_box(path: Path):
-    template = """<div class="image-box"> <img src="{path}" alt="Image 1"> <a href="{path}" target="_blank">{filename}</a></div>"""
-    return template.format(path='../' + str(path).replace('\\', '/'), filename=path.stem)
+    template = """<div class="image-box"> <img src="{path}" alt="{filename}"> <a href="{path}" target="_blank"></a></div>"""
+    return template.format(path=str(path), filename=path.stem)
 
-def add_gallery_container(title: str, images: list[str], id_: str):
+
+def add_gallery_container(title: str, images: list[str], html_id: str):
     template = """\n<h3 id={id_}>{title}</h3>\n<div class="gallery-container">{images}\n</div>"""
-    return template.format(images="\n\t".join(images), title=title, id_=id_)
-
-folders_paperdolls = [
-    Path('Ultima Shields/Art/Paperdolls'),
-    Path('Ultima Armor/Art/Paperdolls'),
-    Path('Ultima Clothes/Art/Paperdolls'),
-    Path('Ultima Accessories/Art/Paperdoll'),
-]
+    return template.format(images="\n\t".join(images), title=title, id_=html_id)
 
 
-folders_shapes = [
-    Path('Ultima Shields/Art/Shapes'),
-    Path('Ultima Armor/Art/Shapes'),
-    Path('Ultima Clothes/Art/Shapes'),
-    Path('Ultima Accessories/Art/Shapes'),
-]
+images_paperdolls = list(Path(".").glob("paperdolls*png"))
+images_shapes_sprites = list(Path(".").glob("shapes*png")) + list(Path(".").glob("sprites*png"))
 
-assert all([i.exists() for i in folders_paperdolls])
-assert all([i.exists() for i in folders_shapes])
+assert all([i.exists() for i in images_paperdolls])
+assert all([i.exists() for i in images_shapes_sprites])
 
 html = html_header_and_style
 
-html += '\n<h2 id="paperdolls">Paperdolls</h2>\n'
-for folder in folders_paperdolls:
-    html += add_gallery_container(folder.parents[1].stem, [create_image_box(path) for path in folder.glob('*.png')], 'paperdolls_' + folder.parents[1].stem.split(' ')[1].lower())
-for folder in Path('Ultima Weapons/Art/Paperdolls').glob('*'):
-    html += add_gallery_container(folder.stem, [create_image_box(path) for path in folder.glob('*.png')], 'paperdolls_' + folder.stem.lower())
 
-html += '\n<h2 id="shapes">Shapes</h2>\n'
-for folder in folders_shapes:
-    html += add_gallery_container(folder.parents[1].stem, [create_image_box(path) for path in folder.glob('*.png')], 'shapes_' + folder.parents[1].stem.split(' ')[1].lower())
-for folder in Path('Ultima Weapons/Art/Sprites').glob('*'):
-    html += add_gallery_container(folder.stem, [create_image_box(path) for path in folder.glob('*.png')], 'shapes_' + folder.stem.lower())
+def get_name(path: Path):
+    t1 = str(path)
+    second_half = t1.split("_")[1]
+    name_itself = second_half.split(".")[0]
+    return name_itself
+
+
+html += '\n<h2 id="paperdolls">Paperdolls</h2>\n'
+for image in images_paperdolls:
+    html += add_gallery_container(
+        get_name(image),
+        [create_image_box(image)],
+        "paperdolls_" + get_name(image).lower(),
+    )
+
+html += '\n<h2 id="shapes">Shapes and sprites</h2>\n'
+for image in images_shapes_sprites:
+    html += add_gallery_container(
+        get_name(image), [create_image_box(image)], "shapes_" + get_name(image).lower()
+    )
 html += html_footer
 
-with open('docs/index.html', 'w') as f:
+with open("index.html", "w") as f:
     f.write(html)
