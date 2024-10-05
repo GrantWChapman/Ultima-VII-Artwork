@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.image-box {
+    text-align: center;
+    margin: 10px;
+    flex: 1 0 auto;
+}
+
+.image-box img {
+    width: 100%;
+    object-fit: contain; /* Keeps the aspect ratio */
+    /* https://stackoverflow.com/questions/14068103/disable-antialising-when-scaling-images */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.image-box a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+
+}
+
+.toc-link {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.toc-columns {
+    display: flex;
+    flex-direction: column;
+}
+
+.toc-column {
+    display: inline-block;
+    flex-direction: column;
+}
+
+#table-of-contents {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+  }
+  
+  h2 {
+    margin-bottom: 5px;
+  }
+  
+  h3 {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
