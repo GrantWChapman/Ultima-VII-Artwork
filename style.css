@@ -53,6 +53,13 @@ h3 {
     justify-content: center;
 }
 
+p {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+
+}
+
 .toc-link {
     margin-left: 10px;
     margin-top: 10px;

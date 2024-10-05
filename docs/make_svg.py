@@ -4,26 +4,29 @@ from PIL import Image
 from pathlib import Path
 import math
 
-N_COLS = 10 # number of columns in the drawing
+N_COLS = 10 # Default number of columns in the merged images
+N_COLS_GUMPS = 3 # Number of columns for the Gumps, which are wider than the other images
 INKSCAPE_PATH = r"C:\Program Files\Inkscape\bin\inkscape.exe"
 
 FOLDERS_PAPERDOLLS = [
-    Path("../Ultima Shields/Art/Paperdolls"),
+    Path("../Ultima Accessories/Art/Paperdoll"),
     Path("../Ultima Armor/Art/Paperdolls"),
     Path("../Ultima Clothes/Art/Paperdolls"),
-    Path("../Ultima Accessories/Art/Paperdoll"),
+    Path("../Ultima Shields/Art/Paperdolls"),
 ]
 
 
 FOLDERS_SHAPES = [
-    Path("../Ultima Shields/Art/Shapes"),
+    Path("../Ultima Accessories/Art/Shapes"),
     Path("../Ultima Armor/Art/Shapes"),
     Path("../Ultima Clothes/Art/Shapes"),
-    Path("../Ultima Accessories/Art/Shapes"),
+    Path("../Ultima Shields/Art/Shapes"),
 ]
 
 FOLDERS_WEAPON_PAPERDOLLS = list(Path("../Ultima Weapons/Art/Paperdolls").glob("*"))
 FOLDERS_WEAPON_SPRITES = list(Path("../Ultima Weapons/Art/Sprites").glob("*"))
+
+FOLDER_GUMPS = Path('../Ultima Gumps/Art')
 
 
 def create_drawing(images_paths: list[Path], n_cols=N_COLS):
@@ -109,6 +112,7 @@ def main():
         process_folder(folder, Path("paperdolls_" + folder.stem + ".png"), clean_svg=True)
     for folder in FOLDERS_WEAPON_SPRITES:
         process_folder(folder, Path("sprites_" + folder.stem + ".png"), clean_svg=True)
+    process_folder(FOLDER_GUMPS, Path("gumps.png"), clean_svg=True, n_cols=N_COLS_GUMPS)
 
 
 if __name__ == "__main__":
