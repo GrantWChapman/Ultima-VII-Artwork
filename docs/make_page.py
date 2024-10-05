@@ -11,7 +11,13 @@ html_header_and_style = r"""
 </head>
 <body>
 
-<h1>Ultima-VII-Artwork</h1>
+
+
+<h1>Ultima VII Artwork for use with Exult</h1>
+
+<p> This repository contains all artwork designed to be used in Ultima VII parts one and two through the use of the Exult program. Each piece is available either as a raw .png file or the .shp format for import through Exult Studio. </p>
+<p> Exult is available at https://github.com/exult/exult </p>
+<p> Ultima VII and Serpent Isle are available for purchase at https://www.gog.com/en/game/ultima_7_complete </p>
 
 <div id="table-of-contents">
   <h2>Table of Contents</h2>
@@ -106,10 +112,11 @@ html_footer = r"""
 #
 # </script>
 
+png_prefix = Path("docs")
 
 def create_image_box(path: Path):
     template = """<div class="image-box"> <img src="{path}" alt="{filename}"> <a href="{path}" target="_blank"></a></div>"""
-    return template.format(path=str(path), filename=path.stem)
+    return template.format(path=str(png_prefix / path), filename=path.stem)
 
 
 def add_gallery_container(title: str, images: list[str], html_id: str):
@@ -148,5 +155,5 @@ for image in images_shapes_sprites:
     )
 html += html_footer
 
-with open("index.html", "w") as f:
+with open("../index.html", "w") as f:
     f.write(html)
