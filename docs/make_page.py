@@ -71,6 +71,9 @@ html_header_and_style = r"""
         <div class="toc-column">
             <h3><a href="#gumps">Gumps</a></h3>
         </div>
+        <div class="toc-column">
+            <h3><a href="#bodies">Bodies</a></h3>
+        </div>
     </div>
 </div>
 
@@ -130,6 +133,7 @@ def add_gallery_container(title: str, images: list[str], html_id: str):
 images_paperdolls = list(Path(".").glob("paperdolls*png"))
 images_shapes_sprites = list(Path(".").glob("shapes*png")) + list(Path(".").glob("sprites*png"))
 gumps = Path('.') / 'gumps.png'
+bodies = Path('.') / 'bodies.png'
 
 assert all([i.exists() for i in images_paperdolls])
 assert all([i.exists() for i in images_shapes_sprites])
@@ -161,6 +165,9 @@ for image in images_shapes_sprites:
 
 html += '\n<h2 id="gumps">Gumps</h2>\n'
 html += add_gallery_container("", [create_image_box(gumps)], "")
+html += '\n<h2 id="bodies">Bodies</h2>\n'
+html += add_gallery_container("", [create_image_box(bodies)], "")
+
 html += html_footer
 
 with open("../index.html", "w") as f:

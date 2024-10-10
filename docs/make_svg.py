@@ -28,6 +28,8 @@ FOLDERS_WEAPON_SPRITES = list(Path("../Ultima Weapons/Art/Sprites").glob("*"))
 
 FOLDER_GUMPS = Path('../Ultima Gumps/Art')
 
+FOLDER_BODIES = Path('../Ultima Bodies - Combined/Art/Paperdoll')
+
 
 def create_drawing(images_paths: list[Path], n_cols=N_COLS):
     widths = []
@@ -113,6 +115,8 @@ def main():
     for folder in FOLDERS_WEAPON_SPRITES:
         process_folder(folder, Path("sprites_" + folder.stem + ".png"), clean_svg=True)
     process_folder(FOLDER_GUMPS, Path("gumps.png"), clean_svg=True, n_cols=N_COLS_GUMPS)
+    process_folder(FOLDER_BODIES, Path("bodies.png"), clean_svg=True)
+    
 
 
 if __name__ == "__main__":
