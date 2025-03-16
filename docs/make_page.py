@@ -38,6 +38,7 @@ html_header_and_style = r"""
            <a class="toc-link" href="#paperdolls_firearms">Firearms</a>
            <a class="toc-link" href="#paperdolls_flails">Flails</a>
            <a class="toc-link" href="#paperdolls_maces">Maces</a>
+           <a class="toc-link" href="#paperdolls_misc">Misc</a>
            <a class="toc-link" href="#paperdolls_polearms">Polearms</a>
            <a class="toc-link" href="#paperdolls_shields">Shields</a>
            <a class="toc-link" href="#paperdolls_slings">Slings</a>
@@ -62,6 +63,7 @@ html_header_and_style = r"""
             <a class="toc-link" href="#shapes_firearms">Firearms</a>
             <a class="toc-link" href="#shapes_flails">Flails</a>
             <a class="toc-link" href="#shapes_maces">Maces</a>
+            <a class="toc-link" href="#shapes_misc">Misc</a>
             <a class="toc-link" href="#shapes_polearms">Polearms</a>
             <a class="toc-link" href="#shapes_slings">Slings</a>
             <a class="toc-link" href="#shapes_swords">Swords</a>
